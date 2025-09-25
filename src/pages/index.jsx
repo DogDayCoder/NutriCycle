@@ -2,23 +2,11 @@ import Layout from "./Layout.jsx";
 
 import Welcome from "./Welcome";
 
-import Profile from "./Profile";
-
-import Dashboard from "./Dashboard";
-
-import CreateListing from "./CreateListing";
-
 import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 
 const PAGES = {
     
     Welcome: Welcome,
-    
-    Profile: Profile,
-    
-    Dashboard: Dashboard,
-    
-    CreateListing: CreateListing,
     
 }
 
@@ -48,12 +36,6 @@ function PagesContent() {
                 
                 
                 <Route path="/Welcome" element={<Welcome />} />
-                
-                <Route path="/Profile" element={<Profile />} />
-                
-                <Route path="/Dashboard" element={<Dashboard />} />
-                
-                <Route path="/CreateListing" element={<CreateListing />} />
                 
             </Routes>
         </Layout>
